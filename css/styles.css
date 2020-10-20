@@ -1,0 +1,51 @@
+/*here made the adjustment for intialization for all margin and padding to 0*/
+/*General Descriptin will be in this section*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header,
+main,
+footer{
+   display: grid;
+}
+/*header contstruction starts*/
+header{
+    width: 100vw;
+    height: 5em;
+    background-color: aquamarine;
+    grid-template-rows: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#instagramIcon{
+    grid-column: 1;
+    background-color: rgb(187, 48, 164);
+}
+#inputWrapper{
+    grid-column: 2;
+    background-color: rgb(48, 187, 145);
+}
+#navigationSegment{
+    grid-column: 3;
+    background-color: rgb(26, 38, 150);
+}
+
+/*header construction ends here*/
+/*main construction starts*/
+main{
+    width: 100vw;
+    height: 40vh;
+    grid-template-rows: 100%;
+    grid-template-columns: 5% 30% 60% 5%;
+    background-color: chocolate;
+}
+#hicodersIcon{
+    grid-column: 2;
+    background-color: antiquewhite;
+}
+#genaralInfo{
+    grid-column: 3;
+    background-color: cornflowerblue;
+}
