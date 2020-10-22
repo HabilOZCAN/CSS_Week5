@@ -2,51 +2,52 @@
 <html lang="en">
 
 <head>
-    <title></title>
+    <title>HiCoders/Ch</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/styles.css" rel="stylesheet">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+   <!--   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
 </head>
 
 <body>
     <header>
         <!--in the header section all of the area will be used by these 3 div elements-->
-        <div id="instagramIcon">
+        <div class="instagramIcon">
             <img src="https://fontmeme.com/images/instagram-new-logo.png" alt="Instagram">
         </div>
 
-        <div id="inputWrapper">
+        <div class="inputWrapper">
             <input type="text" placeholder="&#x1F50D Suchen" result="0">
         </div>
-
-        <div id="navigationHeader">
+        <div class="navigationHeader">
             <nav>
-                <a href="#">
-                    <i class="fa fa-home fa-2x" aria-hidden="false"></i>
-                </a>
-                <a href="#">
-                    <i class="fa fa-home fa-2x" aria-hidden="true"></i>
-                </a>
-                <a href="#">
-                    <i class="fa fa-home fa-2x" aria-hidden="true"></i>
-                </a>
-                <a href="#">
-                    <i class="fa fa-home fa-2x" aria-hidden="true"></i>
-                </a>
-                <a href="#">
-                    <i class="fa fa-home fa-2x" aria-hidden="true"></i>
-                </a>
+                <a href="#"><i class="fa fa-home fa-2x"></i></a>
+                <a href="#"><i class="fa fa-plane fa-2x"></i></a>
+                <a href="#"><i class="fa fa-compass fa-2x"></i></a>
+                <a href="#"><i class="fa fa-heart fa-2x"></i></a>
+                <a href="#"><img id="smallpng" src="img/logo.png"></a>
             </nav>
         </div>
     </header>
     <main>
         <!--in the main section intrudeced 2 div, this elements will be not shown all the area of main element-->
-        <div id="hicodersIcon">
-
-        </div>
+        <img id="hicodersIcon" src="img/logo.png" alt="hi/Coders">
         <div id="genaralInfo">
-
+            <div>
+                <span id="hicodersSpan">hicoders_ch</span>
+                <button type="button">Profil bearbeiten</button>
+                <i class="fa fa-certificate fa-2x" aria-hidden="true"></i>
+            </div>
+            <div>
+                <span>0 Beitraege</span>
+                <span>0 Abonnenten</span>
+                <span>1 abonniert</span>
+            </div>
+            <div>
+                <h3>HiCoders CH</h3>
+                <h4>hicoders.ch</h4>
+            </div>
         </div>
     </main>
     <footer>
@@ -54,21 +55,21 @@
         <!--here is used to spearate the bottom tile as it seem in the img.-->
         <div id="navigationFooter">
             <!--it will be 4 anchor wihtin nav element with corresponding icons-->
-            <nav>
+            <nav class="navigationfooter">
                 <a href="#">
-                    <i class="fa fa-home fa-2x" aria-hidden="false"></i>
+                    <i class="fa fa-book fa-2x" aria-hidden="false"></i>
                     <span>BEITRAEGE</span>
                 </a>
                 <a href="#">
-                    <i class="fa fa-home fa-2x" aria-hidden="true"></i>
+                    <i class="fa fa-tv fa-2x" aria-hidden="true"></i>
                     <span>IGETV</span>
                 </a>
                 <a href="#">
-                    <i class="fa fa-home fa-2x" aria-hidden="true"></i>
+                    <i class="fa fa-bookmark fa-2x" aria-hidden="true"></i>
                     <span>GESPEICHERT</span>
                 </a>
                 <a href="#">
-                    <i class="fa fa-home fa-2x" aria-hidden="true"></i>
+                    <i class="fa fa-address-card fa-2x" aria-hidden="true"></i>
                     <span>MARKIERT</span>
                 </a>
             </nav>

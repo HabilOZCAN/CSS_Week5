@@ -3,120 +3,144 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    font-weight: bold;
 }
-
 header,
 main,
 footer {
     display: grid;
 }
-
 /*header contstruction starts*/
 header {
     width: 100vw;
-    height: 3.5em;
-    background-color: rgb(15, 17, 16);
+    height: 4em;
+    min-height: 30px;
+    background-color: white;
     grid-template-rows: 100%;
     grid-template-columns: 33% 34% 33;
 }
-
-#instagramIcon {
+.instagramIcon {
     grid-column: 1;
-    background-color: rgb(187, 48, 164);
     text-align: center
 }
-
-#instagramIcon img {
+.instagramIcon>img {
     padding-top: 2px;
     height: 3.5rem;
 }
-
-#inputWrapper {
+.inputWrapper {
     grid-column: 2;
-    background-color: rgb(135, 165, 52);
     display: flex;
     flex-direction: row;
     align-content: center;
     justify-content: center;
 }
 input {
-    margin-top: .8em;
+    margin-top: .5em;
     width: 35em;
     height: 2.5em;
     text-align: center;
+    border: 1px solid;
 }
-#navigationHeader {
+.navigationHeader {
     grid-column: 3;
-    background-color: rgb(93, 104, 202);
 }
-
+.navigationHeader a{
+    padding: 1rem;
+}
+#smallpng{
+    height: 2rem;
+    width: height;
+    border-radius: 1rem;
+    border: 1px solid;
+}
 /*header construction ends here*/
 /*main construction starts*/
 main {
     width: 100vw;
-    height: 40vh;
+    height: 20vw;
+    min-height: 200px;
+    min-width: 450px;
     grid-template-rows: 100%;
-    grid-template-columns: 5% 30% 60% 5%;
-    background-color: chocolate;
+    grid-template-columns: 5% 1fr 2fr 5%;
+    background-color: rgba(247, 247, 242, 0.904);
+    overflow: hidden;
 }
-
-#hicodersIcon {
+main>img {
     grid-column: 2;
-    background-color: antiquewhite;
+    width: 50%;
+    height: width;
+    min-height: 150px;
+    min-width: 150px;
+    margin-top: 5%;
+    margin-left: 25%;
+    border-radius: 15em;
 }
-
-#genaralInfo {
+img+div {
     grid-column: 3;
-    background-color: cornflowerblue;
+    display: flex;
+    flex-direction: column;
 }
-
+#genaralInfo div{
+    margin: 16px;
+    justify-content: center;
+}
+#hicodersSpan{
+    font-size: 180%;
+    margin-right: 1rem;
+}
+#hicodersSpan~button{
+    position: relative;
+    top: -.3rem;
+    margin-right: 1rem;
+    width: fit-content;
+    height: fit-content;
+}
 /*main ends here*/
 /*footer starts here*/
 footer {
     width: 100vw;
-    height: 3.5em;
+    height: 3vw;
+    min-height: 30px;
     grid-template-rows: 2% 98%;
     grid-template-columns: 5% 1fr 5%;
-    background-color: rgb(33, 216, 149);
+    background-color: white;
 }
-
 hr {
     grid-row: 1;
     grid-column: 2;
-    border: 1px solid black;
+    border: 1px solid;
 }
-
 #navigationFooter {
     grid-row: 2;
     grid-column: 2;
-    background-color: antiquewhite;
     align-items: center;
     justify-content: center;
 }
-
-
 span {
     margin-left: 3px;
 }
-
 /*navigaition construcktion for header and footer part*/
 nav {
     height: 90%;
     width: 60%;
     margin-left: 20%;
     margin-right: 20%;
-    background-color: cadetblue;
     display: flex;
 }
-
 a {
     height: 100%;
     width: inherit;
-    background-color: coral;
-    border: 1px solid black;
     display: flex;
-    align-items: baseline;
+    align-items: center;
     justify-content: center;
     text-decoration: none;
-    padding-top: 10px;
+}
+a:hover{
+    background-color: rgb(102, 110, 108);
+}
+a:active,
+input:active{
+    background-color: rgb(143, 94, 29);
 }
